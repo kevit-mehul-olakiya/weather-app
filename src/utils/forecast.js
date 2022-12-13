@@ -11,7 +11,7 @@ const forecast = (longitude,latitude,callback)=>{
         } else if (body.error) {
             callback("missing the input parameter !",undefined)
         } else {
-            callback(undefined,'Current temp is ' +body.current.temp_c+ '  and feels like temp is '+body.current.feelslike_c+' and condtion is '+ body.current.condition.text)
+            callback(undefined,'Current temp is ' +body.current.temp_c+ '  and feels like temp is '+body.current.feelslike_c+' and condtion is '+ body.current.condition.text+". The humidity is "+body.current.humidity + "%")
     
         }
     
